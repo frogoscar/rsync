@@ -1,0 +1,18 @@
+#! /bin/bash
+
+FILES=~/.rsync/dev_files
+EXCLUDES=~/.rsync/excludes
+LOCAL_DIR=/home/enmingx
+REMOTE_DIR=bo:backup/linuxex
+
+rsync -avr --safe-links --delete --exclude-from=${EXCLUDES} --files-from=${FILES} ${LOCAL_DIR} ${REMOTE_DIR}
+
+#
+# Additionnal releases
+# build the list of trunk repositories found
+#
+#FILES=/tmp/alligator_trunks
+#find ~/src/alligator/ -name "trunk*" -type d | sed 's/\/home\/enmingx\///' > ${FILES}
+#rsync -avrL --delete --files-from=${FILES} ${LOCAL_DIR} ${REMOTE_DIR}
+
+#

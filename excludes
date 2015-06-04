@@ -1,0 +1,14 @@
+- *.o
+- *.list
+- *.out
+- *.lss
+- *.lst
+- *.hex
+- *.img
+- *.elf
+- *.bin
+- *.binary
+- *~
+- *_build/
+- *_install/
+- #*#

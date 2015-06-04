@@ -1,0 +1,13 @@
+.gtktermrc
+.bashrc
+.emacs
+.rsync/
+.ssh/
+.subversion/
+.emacs.d/
+minicom
+src/alligator/trunk
+src/cetautomatix
+test
+study
+
